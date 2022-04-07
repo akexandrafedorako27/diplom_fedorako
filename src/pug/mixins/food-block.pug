@@ -1,0 +1,22 @@
+mixin food-block(args{})
+    .food-block
+        h1.food-block__title=title 
+        p.food-block__subtitle=subtitle
+            img(src=img, alt="food").food-block__img 
+            img(src=img2, alt="food").food-block__img-ps
+            span.food-block__subtitle-d=subtitle_d
+        p.food-block__subtitle=subtitle2
+            img(src=mood, alt="mood").food-block__img
+            img(src=mood, alt="mood").food-block__img
+            span.food-block__subtitle-d=subtitle_d
+        .food-block__text=text
+        button.food-block__btn Explore food menu
+        .food-block__futter
+            img(src=icone1, alt="icone").food-block__icone
+            img(src=icone2, alt="icone").food-block__icone
+            img(src=icone3, alt="icone").food-block__icone
+        span.food-block__images
+            img(src=img3, alt="food").food-block__images-one
+            img(src=img4, alt="food").food-block__images-two
+            img(src=img5, alt="food").food-block__images-three
+            img(src=img6, alt="food").food-block__images-four

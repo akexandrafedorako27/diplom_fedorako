@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+
+    &__logo{
+        height: 30px;
+        width: 110px;
+        margin-top: 46px;
+        }
+
+    &__img{
+        margin-right: -35px;
+    }
+}
+
+.header__menu{
+
+    &-img{
+        margin: 57px 31px;
+    }
+}
