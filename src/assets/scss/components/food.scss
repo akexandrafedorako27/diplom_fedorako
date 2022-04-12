@@ -3,7 +3,7 @@
 .food{
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(359.4deg, #FFA900 0.48%, rgba(255, 255, 255, 0) 99.45%);
+    border-image-source: linear-gradient(359.4deg, #FFA900 0.48%, rgba(255, 255, 255, 0) 99.45%);
 }
 
 .food-block{
@@ -33,7 +33,7 @@
     }
 
     &__subtitle{
-        font-family: Gilroy;
+        font-family: 'Gilroy';
         font-size: 96px;
         font-weight: 800;
         line-height: 108px;
@@ -42,17 +42,20 @@
 
     &__subtitle-d{
         position: absolute;
-        left: 432px;
+        left: 439px;
     }
 
     &__img{
-        position: relative;
+        position: absolute;
+        top: 79px;
+        left: 321px;
     }
+    
 
     &__img-ps{
         position: absolute;
-        top: 73px;
-        left: 327px;
+        top: 59px;
+        left: 339px;
     }
 
     &__text{
@@ -62,6 +65,12 @@
         font-weight: 450;
         line-height: 32px;
         color: $content-color;
+    }
+
+    &__futter{
+        display: flex;
+        max-width: 165px;
+        justify-content: space-between;
     }
 
     &__btn{
@@ -77,43 +86,41 @@
         margin: 44px 0 60px;
     }
 
-    &__futter{
-        display: flex;
-        max-width: 165px;
-        justify-content: space-between;
+    &__btn:hover{
+        box-shadow: 0px 20px 40px 0px rgba(255, 148, 1, 0.2);
     }
+
 
     &__icone{}
 
     &__icone:hover{
         box-shadow: 0px 10px 40px 0px #FF940133;
         cursor: pointer;
-    }  
-}
-
+    } 
+} 
 
 .food-block__images{
     &-one{
         position: absolute;
         top: -75px;
-        left: 280px;  
+        left: 340px;  
     }
 
     &-two{
         position: absolute;
-        left: 500px;
+        left: 545px;
         top: 325px;
     }
 
     &-three{
         position: absolute;
-        left: 718px;
+        left: 780px;
         top: 410px;
     }
 
     &-four{
         position: absolute;
-        left: 917px;
+        left: 990px;
         top: 320px;
     }
 }

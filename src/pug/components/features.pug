@@ -1,0 +1,22 @@
+include ../mixins/feature-block.pug
+
+h2.title Features
+.subtitle Our Awesome Services
+section.features
+    +feature-block({
+        img:"./assets/imgs/service1.png",
+        subtitle:'Quality Food',
+        text:'Keep healthy food readily available. When you get hungry, you’re more likely to '
+    })
+    +feature-block({
+        img:"./assets/imgs/service2.png",
+        subtitle:'Super Taste',
+        text:'Keep healthy food readily available. When you get hungry, you’re more likely to '
+    })
+    +feature-block({
+        img:"./assets/imgs/service3.png",
+        subtitle:'Fast Delivery',
+        text:'Keep healthy food readily available. When you get hungry, you’re more likely to '
+    })
+    img(src="./assets/imgs/img1.png", alt="image").features__img
+    img(src="./assets/imgs/img2.png", alt="image").features__img-ps

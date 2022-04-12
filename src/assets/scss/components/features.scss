@@ -1,0 +1,69 @@
+@import './main/vars.scss';
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 118px;
+    min-height: 500px;
+    position: relative;
+
+    &__img{
+        position: absolute;
+        left: -185px;
+        top: -245px;
+    }
+
+    &__img-ps{ 
+        position: absolute;
+        right: -262px;
+        top: -258px;}
+}
+
+.feature-block{
+    height: 306px;
+    flex: 1 0 calc((100% - 236px)/3);
+    max-width: calc((100% - 236px)/3);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+    text-align: center;
+
+    &__img{
+        padding-top: 18px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__subtitle::before{
+        position: absolute;
+        content:'';
+        top: -100px;
+        left: 128px;
+        height: 70px;
+        width: 70px;
+        border: solid 1px #FFF5E4;
+        border-radius: 50%;
+        background: #FFF5E4;
+        z-index: 0;
+    }
+
+    &__subtitle {
+        position: relative;
+        z-index: 1;
+        margin: 56px 0px 19px;
+        font-family: Gilroy;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        color:$primary-text-color;
+        }
+
+    &__text {
+        font-family: Circular Std;
+        font-size: 18px;
+        font-weight: 450;
+        line-height: 29px;
+        color: $content-color;
+
+    }
+
+}

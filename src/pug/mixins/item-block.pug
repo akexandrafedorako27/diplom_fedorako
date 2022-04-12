@@ -1,0 +1,9 @@
+mixin item-block(args={})
+    a(href="#").item-block
+        img(src=args.img, alt="recipe").item-block__img
+        .item-block__row
+            .item-block__text=args.text 
+            .item-block__text-ps=args.text_ps
+        .item-block__row
+            button.item-block__btn ADD TO CART
+            .item-block__price=args.price

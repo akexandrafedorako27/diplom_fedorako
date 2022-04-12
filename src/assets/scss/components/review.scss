@@ -1,0 +1,50 @@
+@import './main/vars.scss';
+
+.review{
+   width: 100%;
+}
+
+.review__row{
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 179px;
+}
+
+.review__img{
+    width: 50%;
+    flex: 1 0 50%;
+}
+
+.review__content{
+    width: 50%;
+    flex: 1 0 50%;
+    margin-top: 65px;
+    max-width: 357px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review__title {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: $orange-color;
+}
+
+.review__subtitle {
+    font-family: Gilroy;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 23px;
+}
+
+.review__text{
+    font-family: Circular Std;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 29px;
+    margin-top: 30px;
+}

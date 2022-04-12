@@ -1,0 +1,75 @@
+@import './main/vars.scss';
+
+.about{
+    position: relative;
+    left: -212px;
+    width: 1600px;
+    min-height: 700px;
+    margin-top: 115px;
+}
+
+.about__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__img{
+    width: 50%;
+    flex: 1 0 50%;
+    padding-right: 100px;
+    margin-top: -120px;
+}
+
+.about__content{
+    margin-top: 142px;
+    margin-right: 240px;
+    max-width: 462px;
+    width: 50%;
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__title {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: $orange-color;
+}
+
+.about__subtitle {
+    font-family: Gilroy;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 24px;
+}
+
+.about__text{
+    font-family: Circular Std;
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 32px;
+    color: $content-color;
+    margin-top: 21px;
+}
+
+.about__btn { 
+    height: 62px;
+    width: 224px;
+    font-family: Circular Std;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: $white-color;
+    background-color: $orange-color;
+    border: solid 1px $orange-color;
+    border-radius: 31px;
+    padding: 16px 32px;
+    margin-top: 21px;
+}
+
+.about__btn:hover{
+    box-shadow: 0px 20px 40px 0px rgba(255, 148, 1, 0.2);
+}

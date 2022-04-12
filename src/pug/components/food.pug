@@ -1,19 +1,22 @@
-include ../mixins/food-block.pug
 section.food
-    +food-block({
-        title: 'Restaurant',
-        subtitle: 'Good F',
-        img: './assets/imgs/food1.png',
-        img2: './assets/imgs/food2.png',
-        subtitle_d: 'd',
-        subtitle2: 'Good M',
-        mood: './assets/imgs/mood.png',
-        text: 'The food palace is an neighborhood restaurent serving seasonal global cuisine driven by the faire.',
-        icone1: './assets/imgs/icone1.png',
-        icone2: './assets/imgs/icone2.png',
-        icone3: 'assets/imgs/icone3.png',
-        img3: './assets/imgs/food3.png',
-        img4: './assets/imgs/food4.png',
-        img5: './assets/imgs/food5.png',
-        img6: './assets/imgs/food6.png'
-    })
+    .food-block
+        h1.food-block__title Restaurant
+        p.food-block__subtitle Good Foo
+            img(src="./assets/imgs/food1.png", alt="food").food-block__img 
+            img(src="./assets/imgs/food2.png", alt="food").food-block__img-ps
+            span.food-block__subtitle-d d
+        p.food-block__subtitle Good M
+            img(src="./assets/imgs/mood.png", alt="mood").food-block__imgs
+            img(src="./assets/imgs/mood.png", alt="mood").food-block__imgs
+            span.food-block__subtitle d
+        .food-block__text The food palace is an neighborhood restaurent serving seasonal global cuisine driven by the faire.
+        button.food-block__btn Explore food menu
+        .food-block__futter
+            img(src="./assets/imgs/icone1.png", alt="icone").food-block__icone
+            img(src="./assets/imgs/icone2.png", alt="icone").food-block__icone
+            img(src="./assets/imgs/icone3.png", alt="icone").food-block__icone
+        span.food-block__images
+            img(src="./assets/imgs/food3.png", alt="food").food-block__images-one
+            img(src="./assets/imgs/food4.png", alt="food").food-block__images-two
+            img(src="./assets/imgs/food5.png", alt="food").food-block__images-three
+            img(src="./assets/imgs/food6.png", alt="food").food-block__images-four

@@ -1,5 +1,7 @@
 @import './main/reset.scss';
 @import './main/vars.scss';
+@import '../fonts/stylesheet.scss';
+@import '../fonts/circular/stylesheet.scss';
 
 *{
     box-sizing: border-box;
@@ -8,8 +10,9 @@
 }
 
 html{
-    background-color: #FFFFFF;    ;
+    background-color: $white-color;    
     color: $primary-text-color;
+    font-family: Gilroy;
     font-size: 18px;
     font-weight: 450;
     font-style: normal;
@@ -18,12 +21,41 @@ html{
 
 img{}
 
+.fs{
+    background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+    background-color: cover;
+}
+
 .container{
     max-width: 1255px;
     padding: 0 15px;
-    margin: 0 auto;
-    min-height: 4930px
+    margin: 0 auto;  
+}
+
+.title{
+    margin-top: 62px;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    color: $orange-color;
+
+}
+
+.subtitle{
+    margin: 13px 0px 43px;
+    font-family: Gilroy;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
 }
 
 @import './components/header.scss';
 @import './components/food.scss';
+@import './components/about.scss';
+@import './components/features.scss';
+@import './components/items.scss';
+@import './components/order.scss';
+@import './components/review.scss';

@@ -1,0 +1,25 @@
+include ../mixins/item-block.pug
+
+h2.title Recipes
+.subtitle Most Popular Items
+    img(src="./assets/imgs/img3.png", alt="image").subtitle__img
+section.items
+    +item-block({
+        img:"./assets/imgs/recipe1.png",
+        text:'Flame-boiled dish',
+        text_ps:'8.5',
+        price:'$ 19.99'
+    })
+    +item-block({
+        img:"./assets/imgs/recipe2.png",
+        text:'Peach Melba dish',
+        text_ps:'9.5',
+        price:'$ 20.99'
+    })
+    +item-block({
+        img:"./assets/imgs/recipe3.png",
+        text:'Delmonico Steak dish',
+        text_ps:'8.0',
+        price:'$ 18.99'
+    })
+    button.items__btn See more recipes
