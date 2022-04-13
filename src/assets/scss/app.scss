@@ -17,6 +17,7 @@ html{
     font-weight: 450;
     font-style: normal;
     line-height: 160%;
+    text-decoration: none;
 }
 
 img{}
@@ -59,3 +60,4 @@ img{}
 @import './components/items.scss';
 @import './components/order.scss';
 @import './components/review.scss';
+@import './components/futter.scss';

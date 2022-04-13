@@ -1,0 +1,40 @@
+include ../mixins/futter-item.pug
+
+section.futter
+    .futter__row
+        .futter-block
+            img(src="./assets/imgs/ananas.png", alt="ananas").futter-block__img
+            a(href="#").futter-block__content
+                img(src="./assets/imgs/logo.png", alt="logotip").futter-block__logo
+                img(src="./assets/imgs/letter.png", alt="letter").futter-block__image
+                .futter-block__text info@food_palace.com
+                img(src="./assets/imgs/network.png", alt="network").futter-block__image-ps
+                .futter-block__text www.food_palace.com
+        .futter-columns
+            +futter-item({
+                title:'Our menu',
+                text:'Breakfast',
+                text2:'Lunce',
+                text3:'Dinner'
+            })
+            +futter-item({
+                title:'Information',
+                text:'About us',
+                text2:'Testimonial',
+                text3:'Event'
+            })
+            +futter-item({
+                title:'Useful link',
+                text:'Services',
+                text2:'Support',
+                text3:'Conditions'
+            })
+            +futter-item({
+                title:'Social Handles',
+                text:'Facebook',
+                text2:'Twitter',
+                text3:'Youtube'
+            })
+    .futter__sub Created with by  Sajib Das Supriyo for Twinkle Creative. All rights reserved
+    .futter__img
+        img(src="./assets/imgs/heart.png", alt="heart")

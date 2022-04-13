@@ -1,0 +1,123 @@
+@import './main/vars.scss';
+
+.futter{
+    position: relative;
+    max-width: 1660px;
+    margin-top: 80px;
+    padding: 85px 30px 10px;
+    background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+}
+
+.futter__img{
+    position: absolute;
+    top: -48px;
+    right: 5px;
+}
+
+.futter__row{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.futter-block{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    text-decoration: none;
+    margin-right: 170px;
+
+
+    &__img{
+        position: relative;
+        top: -104px;
+        left: 3px;
+    }
+
+    &__content{
+        flex-direction: column;  
+        padding-left: 40px;
+    }
+
+    &__logo{
+        margin-left: -33px;
+    }
+
+    &__image{
+        position: absolute;
+        top: 61px;
+        left: 280px;
+    }
+
+    &__image-ps{ 
+        position: absolute;
+        top: 113px;
+        left: 280px;
+    }
+
+    &__text{
+        margin-top: 23px;
+        text-decoration: none;
+        font-family: Circular Std;
+        font-size: 16px;
+        font-weight: 450;
+        line-height: 30px;
+        color: $primary-text-color;
+    }
+}
+
+.futter-columns{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 105px;   
+    min-height: 187px;
+}
+
+.futter-item{
+    flex-direction: column;
+    max-width: 100%;
+    text-decoration: none;
+
+    &__title{
+        font-family: Gilroy;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        color: $primary-text-color;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+
+    &__title:hover{
+        text-decoration: underline;
+    }
+
+    &__text{
+        font-family: Circular Std;
+        font-style: Book;
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey-color;
+        margin: 22px 0 25px;
+
+    }
+    &__text:hover{
+        font-family: Circular Std;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        color: $primary-text-color;
+        text-decoration: underline;
+    }
+}
+
+.futter__sub{
+    text-align: center;
+    font-family: Circular Std;
+    font-size: 12px;
+    font-weight: 450;
+    line-height: 120%;
+    color: $sub-color;
+    padding-bottom: 50px;
+}
